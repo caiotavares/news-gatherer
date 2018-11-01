@@ -7,9 +7,9 @@ def requirements_from_pip():
         return [l.strip() for l in pip if not l.startswith('#') and l.strip()]
 
 setup(
-    name='news-scrapper',
-    description='',
-    url='',
+    name='news-gatherer',
+    description='News gatherer for The Guardian',
+    url='https://github.com/caiotavares/news-gatherer',
     author='CT',
     package_dir={'': 'src'},
     packages=find_packages('src'),
@@ -17,6 +17,5 @@ setup(
     install_requires=requirements_from_pip(),
     include_package_data=True,
     zip_safe=False,
-    classifiers=[
-        'Programming Language :: Python :: 3.6']
+    classifiers=['Programming Language :: Python :: 3.6']
 )
