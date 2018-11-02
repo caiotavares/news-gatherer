@@ -8,9 +8,16 @@ cd news-gatherer
 pip3 install .
 ```
 
+## API-KEY
+
+Before you can use `news-gatherer`, you need to create an api-key at https://open-platform.theguardian.com/access/ and export it as an env-var named `API_KEY`
+
 ## Usage
 
-`python3 src/app.py <CMD> <ARGUMENT>`
+```bash
+cd src
+./search.py <CMD> <ARGUMENT>
+```
 
 ## Commands Available
 
@@ -21,7 +28,7 @@ Gather articles that were published on a given date. YYYY-MM-DD format.
 Example
 
 ```bash
-python3 src/app.py from-date 2018-11-01
+./search.py from-date 2018-11-01
 ```
 
 ### `q`
@@ -31,5 +38,5 @@ Build a search query
 Example
 
 ```bash
-python3 src/app.py q 'brazil elections'
+./search.py q 'brazil elections'
 ```
